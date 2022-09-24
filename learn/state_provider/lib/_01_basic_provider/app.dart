@@ -28,7 +28,7 @@ class MyPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Counter'),
+            const Text('Counter (using provider)'),
             const SizedBox(height: 50,),
             CounterWidget(),
           ],
