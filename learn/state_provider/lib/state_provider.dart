@@ -1,3 +1,3 @@
 library state_provider;
 
-export 'app.dart';
+export '_01_basic_provider/app.dart';
