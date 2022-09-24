@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:state_provider/_01_basic_provider/counter_widget.dart';
+import 'package:state_provider/_01_basic_provider/widget/widget_counter.dart';
 
 class BasicProviderApp extends StatelessWidget {
   const BasicProviderApp({Key? key}) : super(key: key);
