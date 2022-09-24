@@ -50,7 +50,7 @@ class MyPage extends StatelessWidget {
       builder: (context, counter, child) {
         return Text(
           '${counter.value}',
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
         );
       },
     );
