@@ -3,20 +3,6 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class _CounterModel with ChangeNotifier {
-  int value = 0;
-
-  void increase() {
-    value++;
-    notifyListeners();
-  }
-
-  void decrease() {
-    value--;
-    notifyListeners();
-  }
-}
-
 class CounterWidget extends StatelessWidget {
   CounterWidget() : super(key: UniqueKey());
 
@@ -35,6 +21,20 @@ class CounterWidget extends StatelessWidget {
         );
       },
     );
+  }
+}
+
+class _CounterModel with ChangeNotifier {
+  int value = 0;
+
+  void increase() {
+    value++;
+    notifyListeners();
+  }
+
+  void decrease() {
+    value--;
+    notifyListeners();
   }
 }
 
