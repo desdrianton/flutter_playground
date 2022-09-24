@@ -24,7 +24,15 @@ class MyPage extends StatelessWidget {
     log('=== MyPage.build');
 
     return Scaffold(
-      body: Center(child: CounterWidget(),),
+      body: Center(
+        child: Column(
+          children: [
+            const Text('Counter'),
+            const SizedBox(height: 50,),
+            CounterWidget(),
+          ],
+        ),
+      ),
     );
   }
 }
