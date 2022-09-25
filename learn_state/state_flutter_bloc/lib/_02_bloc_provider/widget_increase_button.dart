@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:state_flutter_bloc/_02_bloc_provider/cubit_counter.dart';
+import 'package:state_flutter_bloc/_02_bloc_provider/cubit_counter_2.dart';
 
 class IncreaseButton extends StatelessWidget {
   IncreaseButton() : super(key: UniqueKey());

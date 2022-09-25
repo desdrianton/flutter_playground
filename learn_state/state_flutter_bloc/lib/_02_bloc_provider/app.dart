@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:state_flutter_bloc/_02_bloc_provider/cubit_counter.dart';
+import 'package:state_flutter_bloc/_02_bloc_provider/cubit_counter_2.dart';
 import 'package:state_flutter_bloc/_02_bloc_provider/widget_counter.dart';
 
 class BlocProviderApp extends StatelessWidget {
@@ -25,7 +25,7 @@ class BlocProviderPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Counter (using BlocProvider)'),
-            const SizedBox(height: 50,),
+            const SizedBox(height: 0,),
             BlocProvider(
               create: (context) => CounterCubit2(55),
               child: CounterWidget(),
