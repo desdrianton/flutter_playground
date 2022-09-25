@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:state_flutter_bloc/_01_simple_cubit/cubit_counter.dart';
+import 'package:state_flutter_bloc/_02_bloc_provider/cubit_counter.dart';
 
 class CounterInfoBlocBuilder extends StatelessWidget {
   CounterInfoBlocBuilder() : super(key: UniqueKey());
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<CounterCubit, int>(
-      bloc: BlocProvider.of<CounterCubit>(context),
+    return BlocBuilder<CounterCubit2, int>(
+      bloc: BlocProvider.of<CounterCubit2>(context),
       buildWhen: (previous, current) => current % 2 == 0,
       builder: (context, state) {
         return Text(

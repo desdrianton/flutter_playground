@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:state_flutter_bloc/_01_simple_cubit/cubit_counter.dart';
-import 'package:state_flutter_bloc/_01_simple_cubit/widget_counter.dart';
+import 'package:state_flutter_bloc/_02_bloc_provider/cubit_counter.dart';
+import 'package:state_flutter_bloc/_02_bloc_provider/widget_counter.dart';
 
 class BlocProviderApp extends StatelessWidget {
   const BlocProviderApp({Key? key}) : super(key: key);
@@ -27,7 +27,7 @@ class BlocProviderPage extends StatelessWidget {
             const Text('Counter (using BlocProvider)'),
             const SizedBox(height: 50,),
             BlocProvider(
-              create: (context) => CounterCubit(55),
+              create: (context) => CounterCubit2(55),
               child: CounterWidget(),
             ),
           ],

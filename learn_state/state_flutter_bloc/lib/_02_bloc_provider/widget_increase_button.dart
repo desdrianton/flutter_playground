@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:state_flutter_bloc/_01_simple_cubit/cubit_counter.dart';
+import 'package:state_flutter_bloc/_02_bloc_provider/cubit_counter.dart';
 
 class IncreaseButton extends StatelessWidget {
   IncreaseButton() : super(key: UniqueKey());
@@ -9,7 +9,8 @@ class IncreaseButton extends StatelessWidget {
   Widget build(BuildContext context) {
     var button = OutlinedButton(
       onPressed: () {
-        BlocProvider.of<CounterCubit>(context).increase();
+        // BlocProvider.of<CounterCubit>(context).increase();
+        context.read<CounterCubit2>().increase(); // Same as BlocProvider.of<CounterCubit>(context).increase();
       },
       child: const Text('+'),
     );

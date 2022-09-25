@@ -2,8 +2,8 @@ import 'dart:developer';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CounterCubit extends Cubit<int> {
-  CounterCubit(int initialValue) : super(initialValue);
+class CounterCubit2 extends Cubit<int> {
+  CounterCubit2(int initialValue) : super(initialValue);
 
   void increase() => emit(state + 1);
 
