@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:state_flutter_bloc/_03_multi_bloc_provider/cubit_counter_3.dart';
 import 'package:state_flutter_bloc/_03_multi_bloc_provider/cubit_string.dart';
-import 'package:state_flutter_bloc/_03_multi_bloc_provider/widget_counter.dart';
-import 'package:state_flutter_bloc/_03_multi_bloc_provider/widget_string.dart';
+import 'package:state_flutter_bloc/_03_multi_bloc_provider/widget_multi_bloc_listener.dart';
 
 class MultiBlocProviderApp extends StatelessWidget {
   const MultiBlocProviderApp({Key? key}) : super(key: key);
@@ -33,13 +32,7 @@ class MultiBlocProviderPage extends StatelessWidget {
                 BlocProvider(create: (context) => CounterCubit3(0)),
                 BlocProvider(create: (context) => StringCubit()),
               ],
-              child: Column(
-                children: [
-                  CounterWidget(),
-                  const SizedBox(height: 100,),
-                  StringWidget(),
-                ],
-              )
+              child: MultiBlocListener3(),
             ),
           ],
         ),
