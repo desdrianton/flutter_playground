@@ -11,9 +11,9 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   state_provider:
-    path: ./learn/state_provider
+    path: ./learn_state/state_provider
   state_bloc:
-    path: ./learn/state_bloc
+    path: ./learn_state/state_bloc
 
 dev_dependencies:
   flutter_test:

@@ -8,13 +8,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.8.1"
-  bloc:
-    dependency: transitive
-    description:
-      name: bloc
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "8.1.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -145,14 +138,14 @@ packages:
   state_bloc:
     dependency: "direct main"
     description:
-      path: "learn/state_bloc"
+      path: "learn_state/state_bloc"
       relative: true
     source: path
     version: "0.0.1"
   state_provider:
     dependency: "direct main"
     description:
-      path: "learn/state_provider"
+      path: "learn_state/state_provider"
       relative: true
     source: path
     version: "0.0.1"
