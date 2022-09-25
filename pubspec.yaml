@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  dart_stream:
+    path: ./learn_dart/dart_stream
   state_provider:
     path: ./learn_state/state_provider
   state_bloc:
