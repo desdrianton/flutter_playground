@@ -8,5 +8,6 @@ void main() {
   // runApp(const BasicProviderApp());
   // runApp(const BasicBlocApp());
   // runApp(const SimpleStreamApp());
-  runApp(const SimpleCubitApp());
+  // runApp(const SimpleCubitApp());
+  runApp(const BlocProviderApp());
 }

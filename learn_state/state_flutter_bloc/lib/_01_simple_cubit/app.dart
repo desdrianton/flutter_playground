@@ -7,13 +7,13 @@ class SimpleCubitApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyPage(),
+      home: SimpleCubitPage(),
     );
   }
 }
 
-class MyPage extends StatelessWidget {
-  MyPage() : super(key: UniqueKey());
+class SimpleCubitPage extends StatelessWidget {
+  SimpleCubitPage() : super(key: UniqueKey());
 
   @override
   Widget build(BuildContext context) {

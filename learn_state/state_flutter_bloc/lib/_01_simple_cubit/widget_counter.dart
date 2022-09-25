@@ -23,11 +23,11 @@ class CounterWidget extends StatelessWidget {
         Column(
           children: [
             CounterInfoStreamBuilder(counterCubit),
-            const SizedBox(height: 100,),
+            const SizedBox(height: 50,),
             CounterInfoBlocBuilder(counterCubit),
-            const SizedBox(height: 100,),
+            const SizedBox(height: 50,),
             CounterInfoBlocListener(counterCubit),
-            const SizedBox(height: 100,),
+            const SizedBox(height: 50,),
             CounterInfoBlocConsumer(counterCubit),
           ],
         ),
