@@ -27,7 +27,7 @@ class BlocProviderPage extends StatelessWidget {
             const Text('Counter (using BlocProvider)'),
             const SizedBox(height: 0,),
             BlocProvider(
-              create: (context) => CounterCubit2(55),
+              create: (context) => CounterCubit2(-1),
               child: CounterWidget(),
             ),
           ],
