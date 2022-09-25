@@ -21,7 +21,13 @@ class CounterWidget extends StatelessWidget {
 
         return Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [DecreaseButton(), const Spacer(), CounterInfo(), const Spacer(), IncreaseButton()],
+          children: [
+            DecreaseButton(),
+            const Spacer(),
+            CounterInfo(),
+            const Spacer(),
+            IncreaseButton(),
+          ],
         );
       },
     );
