@@ -9,8 +9,9 @@ class CounterInfoBlocBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder(
+    return BlocBuilder<CounterCubit, int>(
       bloc: counterCubit,
+      buildWhen: (previous, current) => current % 2 == 0,
       builder: (context, state) {
         return Text(
           'Using BlocBuilder: $state',
