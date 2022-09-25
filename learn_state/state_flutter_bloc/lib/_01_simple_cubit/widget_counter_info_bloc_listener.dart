@@ -12,10 +12,10 @@ class CounterInfoBlocListener extends StatelessWidget {
     return BlocListener<CounterCubit, int>(
       bloc: counterCubit,
       listener: (context, state) {
-        if(state > 5) {
+        if(state > 5 && state % 2 == 0) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
-              content: Text('Hanya ditampilkan ketika counter > 5 (oleh BlocListener'),
+              content: Text('Hanya ditampilkan ketika counter genap > 5 (oleh BlocListener'),
             ),
           );
         }
