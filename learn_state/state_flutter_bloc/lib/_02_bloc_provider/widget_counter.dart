@@ -4,6 +4,7 @@ import 'package:state_flutter_bloc/_02_bloc_provider/widget_counter_info_bloc_co
 import 'package:state_flutter_bloc/_02_bloc_provider/widget_counter_info_bloc_listener.dart';
 import 'package:state_flutter_bloc/_02_bloc_provider/widget_counter_info_builder.dart';
 import 'package:state_flutter_bloc/_02_bloc_provider/widget_counter_info_stream_builder.dart';
+import 'package:state_flutter_bloc/_02_bloc_provider/widget_counter_info_text.dart';
 import 'package:state_flutter_bloc/_02_bloc_provider/widget_decrease_button.dart';
 import 'package:state_flutter_bloc/_02_bloc_provider/widget_increase_button.dart';
 
@@ -28,6 +29,8 @@ class CounterWidget extends StatelessWidget {
             CounterInfoBlocConsumer(),
             const SizedBox(height: 50,),
             CounterInfoBuilder(),
+            const SizedBox(height: 50,),
+            CounterInfoText(),
           ],
         ),
         const Spacer(),

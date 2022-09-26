@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:state_flutter_bloc/_02_bloc_provider/app.dart';
+import 'package:state_flutter_bloc/state_flutter_bloc.dart';
 // import 'package:state_flutter_bloc/_01_simple_cubit/app.dart';
 // import 'package:state_flutter_bloc/state_flutter_bloc.dart';
 // import 'package:state_provider/state_provider.dart';
@@ -11,6 +11,7 @@ void main() {
   // runApp(const BasicBlocApp());
   // runApp(const SimpleStreamApp());
   // runApp(const SimpleCubitApp());
-  runApp(const BlocProviderApp());
+  // runApp(const BlocProviderApp());
   // runApp(const MultiBlocProviderApp());
+  runApp(const SelectorExampleApp());
 }
