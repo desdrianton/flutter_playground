@@ -13,5 +13,5 @@ void main() {
   // runApp(const SimpleCubitApp());
   // runApp(const BlocProviderApp());
   // runApp(const MultiBlocProviderApp());
-  runApp(const SelectorExampleApp());
+  runApp(const SimpleBlocApp());
 }

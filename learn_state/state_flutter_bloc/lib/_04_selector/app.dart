@@ -43,16 +43,17 @@ class ExampleView extends StatelessWidget {
       builder: (context, userName) {
         log('------------------- Rebuild name');
 
-        return Text('Name: $userName');
+        return Text('Name (using BlocSelector) : $userName');
       }
     );
 
-    var ageBlocSelector = BlocSelector<UserCubit, UserModel, int>(
-      selector: (userModel) => userModel.age,
-      builder: (context, userAge) {
+    var ageContextSelect = Builder(
+      builder: (context) {
         log('------------------- Rebuild age');
 
-        return Text('Age: $userAge');
+        int userAge = context.select<UserCubit, int>((value) => value.state.age);
+
+        return Text('Age (using context.select) : $userAge');
       },
     );
 
@@ -74,7 +75,7 @@ class ExampleView extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       children: [
         nameBlocSelector,
-        ageBlocSelector,
+        ageContextSelect,
         const SizedBox(height: 100,),
         nameChanger,
         ageChanger,
