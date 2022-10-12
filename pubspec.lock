@@ -102,6 +102,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  inherited_widget:
+    dependency: "direct main"
+    description:
+      path: "learn_widget/inherited_widget"
+      relative: true
+    source: path
+    version: "0.0.1"
   lints:
     dependency: transitive
     description:

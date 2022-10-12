@@ -18,6 +18,8 @@ dependencies:
     path: ./learn_state/state_bloc
   state_flutter_bloc:
     path: ./learn_state/state_flutter_bloc
+  inherited_widget:
+    path: ./learn_widget/inherited_widget
 
 dev_dependencies:
   flutter_test:
