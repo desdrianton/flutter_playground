@@ -15,5 +15,5 @@ void main() {
   // runApp(const BlocProviderApp());
   // runApp(const MultiBlocProviderApp());
   // runApp(const SimpleBlocApp());
-  runApp(const WithoutInheritedWidgetApp());
+  runApp(const WithInheritedWidgetApp());
 }
